@@ -279,7 +279,7 @@ class PointCloudRotation(object):
         else:
             device = data.device
 
-        if isinstance(self.angle, collections.Iterable):
+        if isinstance(self.angle, collections.abc.Iterable):
             rot_mats = []
             for axis_ind, rot_bound in enumerate(self.angle):
                 theta = 0
